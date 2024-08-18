@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display-swap");
+  
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: lightblue;
+    background-size: cover;
+    background-position: center;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 96%;
+    padding: 20px 90px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center left;
+    z-index: 75;
+}
+.logo {
+
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color:black;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 20px;
+}
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background:black;
+    transition: .3s;
+
+}
+.navbar a:hover::before {
+    width: 100%;
+
+}
+.container{
+    padding: 15rem;
+    
+}
+/*.flex {
+    display: -webkit-flex; 
+    display: flex; 
+    -webkit-box-direction: row ;
+    flex-direction: row;
+    -webkit-box-justify-content: flex-start;
+    justify-content: flex-start;
+
+}
+.slider wrapper div{
+    position: relative;
+}
+.slider-wrapper { margin-top: 15vw; margin-left: 11vw;}
+.slide-image {height: 24vw}
+.slide-image img{width: 24vw; cursor: pointer;}
+.slide-content {width: 25vw; color:#fff; padding: 3px 18px 3px 9px;}
+.slide-date {color: #0a8acb;font-size:1.1vw;font-weight:400;letter-spacing:0.1vw ;padding-bottom:1.4vw; }
+.slide-title {font-size:1.2vw; font-weight:400 ;letter-spacing:0.1vw ;line-height:1.55vw ; padding-bottom:1.8vw;}
+.slide-text {font-size:0.80vw ;line-height:1.2vw;opacity:0.8 ;padding-bottom:4vw;}
+.slide-more {font-weight: 400; letter-spacing: 0.1vw; float: left; font-size: 0.9vw;}
+.slide-bullet {width: 0.5vw; height: 0.5vw; background-color: #0b8bcc; border-radius: 200%; position: relative; margin-left: 1.2vw;}
+.slide-nav {margin-left: 64vw; margin-top: -5.5vw;}
+div.overlay-blue {width: 100%; height: 100%; position: absolute; top: 0; transition: 0.5s ease all;}
+div.overlay-blue:hover {background-color: rgba(13, 27, 43, 0.5);}*/
+
+
+.slide-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider-flex {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+    border-radius: 0.5rem;
+    z-index: -1;
+}
+.slider{
+    display: flex;
+    position: relative;
+
+    z-index: -1;
+    
+}
+
+.slider-flex::-webkit-scrollbar {
+    display: none;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    transition: .3s;
+}
+.slider-flex:hover .slider img{
+    filter: blur(10px);
+}
+.slider .content{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    box-sizing: border-box;
+    opacity:0;
+    position:absolute;
+    font-size: 18px;
+    color:#fff;
+    font-weight: 500;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    transition: 0.6s;
+}
+.slider-flex:hover .slider .content{
+    opacity: 1;
+}
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: relative;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-5%);
+    z-index: 1;
+    
+}
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color:#fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+    opacity: 1;
+}
+/*Utility Classes*/
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+}
+.animate--inifinite{
+    animation-iteration-count: inifinite;
+}
+.animate--delay-1s{
+    animation-delay: 1s;
+}
+.animate--fast{
+    animation-duration:0.6s;
+}
+.animate--slow{
+    animation-duration: 3s;
+}
+/* Animation */
+@keyframes slideInLeft{
+    from {
+        transform: translateX(-300px);  
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+.slideInLeft{
+    font-family: Poppins,"sans-serif";
+    /*animation: slideInLeft 1s ease-in 0s 1 normal both;*/
+    animation-name: slideInLeft;
+    animation-timing-function: ease-in;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+
+}
+/* .heading-1{
+    font-family: Poppins,"sans-serif";
+    animation: slideInLeft 1s ease-in 0s 1 normal both;
+    /* animation-name: slideInLeft;
+    animation-duration: 1s ;
+    animation-timing-function:ease-in ;
+    animation-delay:0s ;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards; */
+.cont2 {
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+}    
+/*.slider-text {
+    display: flex;
+    z-index: 1;
+
+    box-sizing: border-box;
+    opacity:1;
+    position: absolute;
+    
+    font-size: 18px;
+    color:#fff;
+    font-weight: 500;
+    text-decoration: none;
+    
+}*/
+.abtcont {
+    display: flex;
+    aspect-ratio: 5/4;
+    overflow-x: visible;
+    
+    z-index: -1;
+    flex-direction: row;
+}
+.abtcont img{
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+    border-radius: 0.5rem;
+    max-width: 300%;
+    height: 200%;
+    display: flex;
+    aspect-ratio: 8/9;
+    flex: 0 0 100%;
+    object-fit: cover;
+    transition: .3s;
+
+}
+@keyframes slideInleft{
+    from {
+        transform: translateX(-300px);  
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+.slideInleft{
+    font-family: Poppins,"sans-serif";
+    /*animation: slideInLeft 1s ease-in 0s 1 normal both;*/
+    animation-name: slideInLeft;
+    animation-timing-function: ease-in;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+
+}
+.scroll-wrapper {
+    max-height: 120px ;
+    border: 1px solid #ddd;
+    display:flex;
+    overflow-x:auto;
+}
+.scroll-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.scroll-wrapper .item{
+    min-width: 110px;
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+
