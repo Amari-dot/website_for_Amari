@@ -18,13 +18,15 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 96%;
-    padding: 20px 90px;
+    width: 100vw;
+    padding-right: 20px 90px;
+    padding-left: 20px ;
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center left;
     z-index: 75;
+    display: flex;
 }
 .logo {
 
@@ -35,6 +37,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 .navbar a {
+    
     position: relative;
     font-size: 18px;
     color:black;
@@ -58,7 +61,7 @@ body {
 
 }
 .container{
-    padding: 15rem;
+    padding: 5rem;
     
 }
 /*.flex {
@@ -273,21 +276,39 @@ div.overlay-blue:hover {background-color: rgba(13, 27, 43, 0.5);}*/
 
 }
 .scroll-wrapper {
-    max-height: 120px ;
-    border: 1px solid #ddd;
+    max-height: 300px ;
     display:flex;
     overflow-x:auto;
+    gap: 5px;   
 }
+
 .scroll-wrapper::-webkit-scrollbar{
     display: none;
 }
 
 .scroll-wrapper .item{
-    min-width: 110px;
-    height: 110px;
-    line-height: 110px;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    height: 175px;
+    line-height: 50px;
     text-align: center;
-    background-color: #ddd;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 5%;
+    justify-content: center;
+    
+
 }
+.boximg{
+    margin: 10px;
+    min-width: 180px;
+    height: 122px;
+    background-color: black;
+    border: 1px solid gainsboro;
+    border-radius: 5%;
+    position: relative;
+}
+
 
 
