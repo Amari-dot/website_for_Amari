@@ -309,12 +309,13 @@ div.overlay-blue:hover {background-color: rgba(13, 27, 43, 0.5);}*/
     border-radius: 5%;
     position: relative;
 }
-.changingT {
+#changeT {
     display: flex;
     justify-content: center;
     font-weight: 700;
     font-family: "Poppins", sans-serif;
     margin-top: 20px;
+    background-color: #fff;
 }
 
 
