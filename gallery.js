@@ -1,5 +1,5 @@
 
-const changeT = document.getElementById('changeT');
+
 
 
 function changeFont(event){

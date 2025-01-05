@@ -89,5 +89,15 @@
         <div id = "changeT">
             Bottom TEXT
         </div>
+        <script>
+            const changeT = document.getElementById('changeT');
+    
+            function changeFont(event) {
+                event.target.style.fontFamily = 'Arial';
+                event.target.style.backgroundColor = 'yellow';
+            }
+    
+            changeT.addEventListener("click", changeFont);
+        </script>
     </section>
 </html>
