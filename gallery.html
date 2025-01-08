@@ -93,8 +93,9 @@
             const changeT = document.getElementById('changeT');
     
             function changeFont(event) {
-                event.target.style.fontFamily = 'Arial';
+                event.target.style.fontFamily = 'Comic Sans MS';
                 event.target.style.backgroundColor = 'yellow';
+                event.target.innerHTML = 'Go ahead and pick something';
             }
     
             changeT.addEventListener("click", changeFont);
