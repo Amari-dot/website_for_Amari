@@ -19,7 +19,7 @@
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="gallery.html">Gallery</a>
-            <a href="#">Services</a>
+            <a href="project.html">Projects</a>
             <a href="contact.html">Contact</a>
 
         </nav>
@@ -106,9 +106,19 @@
             const bx13 = document.getElementById('bx13');
             
             
+            
             function revertWord(event){
                 changeT.innerText = '';
             }
+
+            function hide(){
+                document.getElementsByClassName('scroll-wrapper')
+                [0].
+                    style.visibility = 'hidden';
+
+            }
+
+
     
             bx1.addEventListener("mouseenter", () => changeT.innerText = "Box 1" );
             bx1.addEventListener("mouseleave", revertWord);
@@ -136,6 +146,9 @@
             bx12.addEventListener("mouseleave", revertWord);
             bx13.addEventListener("mouseenter", () => changeT.innerText = "Box 13" );
             bx13.addEventListener("mouseleave", revertWord);
+
+            
+        
         </script>
     </section>
 </html>
