@@ -32,55 +32,55 @@
         
     
         <div class = "scroll-wrapper">
-            <div class = "item">
+            <div class = "item" id = "bx1">
                 <div class="boximg"></div>
                 box 1
             </div>
-            <div class = "item">
+            <div class = "item" id = "bx2">
                 <div class="boximg"></div>
                 box 2
             </div>
-            <div class = "item">
+            <div class = "item" id = "bx3">
                 <div class="boximg"></div>
                 box 3
             </div>
-            <div class = "item">
+            <div class = "item" id = "bx4">
                 <div class="boximg"></div>
                 box 4
             </div>
-            <div class = "item">
+            <div class = "item" id = "bx5">
                 <div class="boximg"></div>
                 box 5
             </div>
-            <div class = "item">
+            <div class = "item" id = "bx6">
                 <div class="boximg"></div>
                 box 6
             </div>
-            <div class = "item">
+            <div class = "item" id = "bx7">
                 <div class="boximg"></div>
                 box 7
             </div>
-            <div class = "item">
+            <div class = "item" id = "bx8">
                 <div class="boximg"></div>
                 box 8
             </div>
-            <div class = "item">
+            <div class = "item" id = "bx9">
                 <div class="boximg"></div>
                 box 9
             </div>
-            <div class = "item">
+            <div class = "item" id = "bx10">
                 <div class="boximg"></div>
                 box 10
             </div>
-            <div class = "item">
+            <div class = "item" id = "bx11">
                 <div class="boximg"></div>
                 box 11
             </div>
-            <div class = "item">
+            <div class = "item" id = "bx12">
                 <div class="boximg"></div>
                 box 12
             </div>
-            <div class = "item">
+            <div class = "item" id = "bx13">
                 <div class="boximg"></div>
                 box 13
             </div>
@@ -91,14 +91,51 @@
         </div>
         <script>
             const changeT = document.getElementById('changeT');
-    
-            function changeFont(event) {
-                event.target.style.fontFamily = 'Comic Sans MS';
-                event.target.style.backgroundColor = 'yellow';
-                event.target.innerHTML = 'Go ahead and pick something';
+            const bx1 = document.getElementById('bx1');
+            const bx2 = document.getElementById('bx2');
+            const bx3 = document.getElementById('bx3');
+            const bx4 = document.getElementById('bx4');
+            const bx5 = document.getElementById('bx5');
+            const bx6 = document.getElementById('bx6');
+            const bx7 = document.getElementById('bx7');
+            const bx8= document.getElementById('bx8');
+            const bx9 = document.getElementById('bx9');
+            const bx10 = document.getElementById('bx10');
+            const bx11 = document.getElementById('bx11');
+            const bx12 = document.getElementById('bx12');
+            const bx13 = document.getElementById('bx13');
+            
+            
+            function revertWord(event){
+                changeT.innerText = '';
             }
     
-            changeT.addEventListener("click", changeFont);
+            bx1.addEventListener("mouseenter", () => changeT.innerText = "Box 1" );
+            bx1.addEventListener("mouseleave", revertWord);
+            bx2.addEventListener("mouseenter", () => changeT.innerText = "Box 2" );
+            bx2.addEventListener("mouseleave", revertWord);
+            bx3.addEventListener("mouseenter", () => changeT.innerText = "Box 3" );
+            bx3.addEventListener("mouseleave", revertWord);
+            bx4.addEventListener("mouseenter", () => changeT.innerText = "Box 4" );
+            bx4.addEventListener("mouseleave", revertWord);
+            bx5.addEventListener("mouseenter", () => changeT.innerText = "Box 5" );
+            bx5.addEventListener("mouseleave", revertWord);
+            bx6.addEventListener("mouseenter", () => changeT.innerText = "Box 6" );
+            bx6.addEventListener("mouseleave", revertWord);
+            bx7.addEventListener("mouseenter", () => changeT.innerText = "Box 7" );
+            bx7.addEventListener("mouseleave", revertWord);
+            bx8.addEventListener("mouseenter", () => changeT.innerText = "Box 8" );
+            bx8.addEventListener("mouseleave", revertWord);
+            bx9.addEventListener("mouseenter", () => changeT.innerText = "Box 9" );
+            bx9.addEventListener("mouseleave", revertWord);
+            bx10.addEventListener("mouseenter", () => changeT.innerText = "Box 10" );
+            bx10.addEventListener("mouseleave", revertWord);
+            bx11.addEventListener("mouseenter", () => changeT.innerText = "Box 11" );
+            bx11.addEventListener("mouseleave", revertWord);
+            bx12.addEventListener("mouseenter", () => changeT.innerText = "Box 12" );
+            bx12.addEventListener("mouseleave", revertWord);
+            bx13.addEventListener("mouseenter", () => changeT.innerText = "Box 13" );
+            bx13.addEventListener("mouseleave", revertWord);
         </script>
     </section>
 </html>
