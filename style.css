@@ -317,6 +317,16 @@ div.overlay-blue:hover {background-color: rgba(13, 27, 43, 0.5);}*/
     margin-top: 20px;
    
 }
+.boxbk :hover{
+    margin: 10px;
+    min-width: 180px;
+    height: 122px;
+    background-color: lightgrey;
+    border: 1px solid gainsboro;
+    border-radius: 5%;
+    position: relative;
+
+}
 
 
 
