@@ -301,14 +301,22 @@ div.overlay-blue:hover {background-color: rgba(13, 27, 43, 0.5);}*/
 
 }
 .boximg{
-    margin: 10px;
-    min-width: 180px;
+    margin: 20px;
+    width: 160px;
     height: 122px;
     background-color: black;
     border: 1px solid gainsboro;
     border-radius: 5%;
     position: relative;
+    transform: translate(-2%);
+    
 }
+.boximg:hover {
+    transition: all 3s ease;
+    background-color: blue;
+    transform: translate(2%);
+}
+
 #changeT {
     display: flex;
     justify-content: center;
@@ -319,7 +327,7 @@ div.overlay-blue:hover {background-color: rgba(13, 27, 43, 0.5);}*/
 }
 .boxbk :hover{
     margin: 10px;
-    min-width: 180px;
+    max-width: 160px;
     height: 122px;
     background-color: lightgrey;
     border: 1px solid gainsboro;
