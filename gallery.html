@@ -36,22 +36,51 @@
                 <div class="boximg"></div>
                 <div class = "boxbk"></div>
               
-                <style>
-                    #ShadowOut{
-                        transform: translateY(-10%);
-                        
-                        
-                    }
-                    svg #ShadowOut:hover{
-                        transform: translateY(2%);
-                        transition: all 1s ease;
-                    }
-                </style>
+                
                 box 1
             </div>
             <div class = "item" id = "bx2">
-                <div class="boximg"></div>
-                <div class = "boxbk"></div>
+                <svg width="186" height="156" viewBox="0 0 186 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Square Shadow">
+                    <rect width="186" height="156" fill="white"/>
+                    <g id="ShadowT">
+                    <g id="BottomCo">
+                    <rect id="Rectangle1" x="18" y="121" width="160" height="16" rx="3" fill="#D9D9D9"/>
+                    <rect id="Rectangle2" x="160" y="14" width="18" height="110" rx="3" fill="#D9D9D9"/>
+                    </g>
+                    <g id="TopCorner">
+                    <rect id="Rectangle1_2" x="168.079" y="22.9998" width="160" height="16" rx="3" transform="rotate(179.711 168.079 22.9998)" fill="#D9D9D9"/>
+                    <rect id="Rectangle2_2" x="26.621" y="130.716" width="18" height="110" rx="3" transform="rotate(179.711 26.621 130.716)" fill="#D9D9D9"/>
+                    </g>
+                    <rect id="LeftRectangle" x="25" y="22" width="73" height="102" fill="#1E1E1E"/>
+                    <rect id="RightRect" x="93" y="22" width="73" height="102" fill="#1E1E1E"/>
+                    </g>
+                    </g>
+                    </svg>
+                    <style>
+                        svg #ShadowT:hover #TopCorner {
+                            transition: all 1s ease;
+                            transform: translateY(-5%);
+                            
+                        }
+                        svg #ShadowT:hover #BottomCo {
+                            transition: all 1s ease;
+                            transform: translateY(5%);
+                            
+                        }
+                        svg #ShadowT:hover #LeftRectangle{
+                            transition: all 1s ease;
+                            transform: translateX(-25%);
+                            
+                        }
+                        svg #ShadowT:hover #RightRect {
+                            transition: all 1s ease;
+                            transform: translateX(25%);
+                            
+                        }
+                        
+                       
+                    </style>
                 box 2
             </div>
             <div class = "item" id = "bx3">
